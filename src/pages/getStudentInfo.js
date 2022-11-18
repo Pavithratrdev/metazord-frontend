@@ -15,7 +15,7 @@ const GetStudInformation =() => {
     const navigate = useNavigate()
 
     function Delete(id) {
-        axios.delete(`http://localhost:5000/students/deletestud/${id}`).then(res=>{
+        axios.delete(`https://metazordbackend.herokuapp.com/students/deletestud/${id}`).then(res=>{
             console.log(res)
             setvariant("success")
             setMsg("Deleted Sucessfully")
@@ -31,7 +31,7 @@ const GetStudInformation =() => {
 
     useEffect(() => {
   
-       axios.get('http://localhost:5000/students/getAllStu')
+       axios.get('https://metazordbackend.herokuapp.com/students/getAllStu')
         .then(function (response) {          
           setData(response.data.allStudents);   
           console.log(response.data.allStudents);         

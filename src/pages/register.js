@@ -30,7 +30,7 @@ const Register = () =>{
             released: Date.now(),
             phonenumber: phone
         }
-        axios.post('http://localhost:5000/students/create',body).then(res=>{
+        axios.post('https://metazordbackend.herokuapp.com/students/create',body).then(res=>{
             console.log(res)
             setvariant("success")
             setMsg("Form uploaded Sucessfully")

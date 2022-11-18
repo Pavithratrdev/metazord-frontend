@@ -26,7 +26,7 @@ const UpdateStudInfo = () =>{
 
     useEffect(() => { 
   
-        axios.get(`http://localhost:5000/students/getStudOne/${id}`)
+        axios.get(`https://metazordbackend.herokuapp.com/students/getStudOne/${id}`)
           .then(function (response) {
             console.log(response)
            
@@ -54,7 +54,7 @@ const UpdateStudInfo = () =>{
             released: Date.now(),
             phonenumber: phone
         }
-        axios.patch(`http://localhost:5000/students/update/${id}`,body).then(res=>{
+        axios.patch(`https://metazordbackend.herokuapp.com/students/update/${id}`,body).then(res=>{
             console.log(res)
             setvariant("success")
             setMsg("Form updated Sucessfully")
