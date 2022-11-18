@@ -49,7 +49,7 @@ const GetStudInformation =() => {
            
              <h1 className='mt-5'>Student Details</h1>
              <div className='table1'>
-                 <Table striped className='col-md-6'>
+                 <Table striped hover>
                      <thead>
                          <tr>
                          <th>Roll No</th>
